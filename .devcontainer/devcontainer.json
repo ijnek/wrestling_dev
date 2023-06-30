@@ -1,0 +1,12 @@
+{
+  "name": "wrestling_dev",
+  "image": "ghcr.io/ijnek/wrestling_image:main",
+  "runArgs": [
+    "--privileged",
+    "--network=host",
+  ],
+  "workspaceFolder": "/home/vscode/ws",
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
+  ]
+}
